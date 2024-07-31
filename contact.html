@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="script.js">
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+       <h1>Contact Us</h1>
+    </section>
+    <!---- about us contant -->
+
+    <!-- contant us -->
+     <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.14571337597!2d72.71637411447857!3d19.082177513371683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1722089509374!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </section>
+
+     <section class="contant-us">
+        <div class="row">
+            <div class="contant-col">
+                <div>
+                    <i class="fa fa-home" ></i>
+                    <span>
+                        <h5>XYZ, QWE Buliding</h5>
+                        <p>Mumbai, Maharashtra, IN</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone" ></i>
+                    <span>
+                        <h5>91 9258753586</h5>
+                        <p>Monday to Friday, 9AM To 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o" ></i>
+                    <span>
+                        <h5>Info@dyc.com</h5>
+                        <p>Email your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contant-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter your name">
+                    <input type="email" name="email" placeholder="Enter your Email">
+                    <input type="text" name="subject"  placeholder="Enter your subject">
+                    <textarea row="8" name="message"  placeholder="Message" required></textarea>
+
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+     </section>
+    <!-- footer -->
+     <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Quasi unde adipisci consectetur veniam facere  <br> deserunt autem ad quisquam quos ducimus!</p>
+        <div class="icons">
+            <i class="fa fa-facebook" ></i>
+            <i class="fa fa-twitter" ></i>
+            <i class="fa fa-instagram" ></i>
+            <i class="fa fa-linkdin" ></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> By Yogesh</i></p>
+     </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
